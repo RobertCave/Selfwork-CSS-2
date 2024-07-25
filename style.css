@@ -17,13 +17,17 @@ body{
 
 nav{
     background-color: white;
-    vertical-align: bottom;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+
 }
 
 nav a {
     color: grey;
 }
 nav ul {
+    
     display: flex;
     justify-content:space-evenly;
     align-items:center;
@@ -33,6 +37,7 @@ nav ul {
 
 nav li {
     list-style-type: none;
+    padding-top: 10px;
 }
 
 .link {
@@ -148,7 +153,9 @@ time{
 
 
 .immagine-articolo {  
-    width: 350px;
+    /* Come suggerito da tutor. Molto meglio così perchè tutto è più responsive. Grazie */
+    width: 100%; 
+    height: auto;
 }
 
 

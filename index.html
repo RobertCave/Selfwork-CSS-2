@@ -14,109 +14,108 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--   Selfwork CSS 2
-Utilizza il file dell’esercitazione precedente e modificalo come segue:
-
-Prova ad affiancare l’<aside> ed il contenitore dell’articolo sfruttando le potenzialità del flexbox. Provate ad applicare, ad esempio, al contenitore dell’articolo una width del 60% ed all’<aside> una width del 40%. Se userete dei padding e/o dei margin, potrebbe essere necessario rivalutare le larghezze dei due contenitori.
+    <!--   Selfwork CSS 2
+    Utilizza il file dell’esercitazione precedente e modificalo come segue:
     
-Modifica la navbar <nav> in modo tale che i link siano tutti allineati uno di fianco all’altro. Valutate se usare il display: inline-block; applicato ad ogni voce del menu oppure usare il display: flex; applicato all’elemento padre. Lavora solo sulle voci di menu principali (CORSI - GUIDE - WEBINAR - BLOG - CHI SIAMO - SEI UN'AZIENDA?). Non preoccuparti dei sotto menu.
-(OPZIONALE) Sfruttare lo pseudo selettore :hover per applicare un border-bottom alle voci del menu quando l’utente ci passa sopra il mouse.
+    Prova ad affiancare l’<aside> ed il contenitore dell’articolo sfruttando le potenzialità del flexbox. Provate ad applicare, ad esempio, al contenitore dell’articolo una width del 60% ed all’<aside> una width del 40%. Se userete dei padding e/o dei margin, potrebbe essere necessario rivalutare le larghezze dei due contenitori.
         
-        
-PS le immagini del “Leggi anche:” hanno una max-width: 100%; ed una height: auto; in questo modo le immagini si ridurranno adattandosi al loro contenitore.  
--->
-        
-
-<nav>
-    <ul>
-        <img src="./media/logo.png" alt="Logo Aulab" class="logo">
-        
-        <li><a href="https://aulab.it" target="_blank" class="link">CORSI</a></li>
-        <li><a href="https://aulab.it/guide" target="_blank" class="link">GUIDE</a></li>
-        <li><a href="https://aulab.it/" target="_blank" class="link">WEBINAR</a></li>
-        <li><a href="https://aulab.it/blog" target="_blank" class="link">BLOG</a></li>
-        <li><a href="https://aulab.it/" target="_blank" class="link">CHI SIAMO</a></li>
-        <li><a href="https://aulab.it" target="_blank" class="link">SEI UN'AZIENDA?</a></li>
-    </ul>
-</nav>
-
-<header class="intestazione">  
-    <h1>Aulab Blog</h1>
-
-    <!-- Barra dei percorsi -->
-    <div class="percorso">
-        <a href="#">Home</a> >> Blog
-    </div>
-</header>
-    
-    <main>
-        <h2>Articoli in evidenza</h2>
-        <!--  Articoli del blog -->
-        <section>
+        Modifica la navbar <nav> in modo tale che i link siano tutti allineati uno di fianco all’altro. Valutate se usare il display: inline-block; applicato ad ogni voce del menu oppure usare il display: flex; applicato all’elemento padre. Lavora solo sulle voci di menu principali (CORSI - GUIDE - WEBINAR - BLOG - CHI SIAMO - SEI UN'AZIENDA?). Non preoccuparti dei sotto menu.
+            (OPZIONALE) Sfruttare lo pseudo selettore :hover per applicare un border-bottom alle voci del menu quando l’utente ci passa sopra il mouse.
             
-            <span class="blog-articles">
-                <article>
-                    <figure>
-                        <img src="./media/1.png" alt="Prima immagine" class="immagine-articolo">
-                    </figure>
+            
+            PS le immagini del “Leggi anche:” hanno una max-width: 100%; ed una height: auto; in questo modo le immagini si ridurranno adattandosi al loro contenitore.  
+            -->
+            
+            
+            <nav>
+                <img src="./media/logo.png" alt="Logo Aulab" class="logo">
+                <ul>
+                    <li><a href="https://aulab.it" target="_blank" class="link">CORSI</a></li>
+                    <li><a href="https://aulab.it/guide" target="_blank" class="link">GUIDE</a></li>
+                    <li><a href="https://aulab.it/" target="_blank" class="link">WEBINAR</a></li>
+                    <li><a href="https://aulab.it/blog" target="_blank" class="link">BLOG</a></li>
+                    <li><a href="https://aulab.it/" target="_blank" class="link">CHI SIAMO</a></li>
+                    <li><a href="https://aulab.it" target="_blank" class="link">SEI UN'AZIENDA?</a></li>
+                </ul>
+            </nav>
+            
+            <header class="intestazione">  
+                <h1>Aulab Blog</h1>
+                
+                <!-- Barra dei percorsi -->
+                <div class="percorso">
+                    <a href="#">Home</a> >> Blog
+                </div>
+            </header>
+            
+            <main>
+                <h2>Articoli in evidenza</h2>
+                <!--  Articoli del blog -->
+                <section>
                     
-                    <header> 
-                        <h3>Cos’è il linguaggio HTML e come impararlo</h3>
-                        <time>31 Agosto 2021</time>
-                    </header>
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/1.png" alt="Prima immagine" class="immagine-articolo">
+                            </figure>
+                            
+                            <header> 
+                                <h3>Cos’è il linguaggio HTML e come impararlo</h3>
+                                <time>31 Agosto 2021</time>
+                            </header>
+                            
+                            <p>Il linguaggio HTML (Hypertext Markup Language) è uno dei più conosciuti e diffusi: lo si trova infatti praticamente in tutte le pagine web esistenti. È una scelta popolare tra i principianti Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis, aliquid magni consequuntur adipisci ullam nemo, cum rem odit sed ducimus aperiam nisi ut praesentium, nesciunt quaerat. Temporibus, aut nesciunt.</p>
+                            <button>Leggi tutto ></button>
+                            
+                        </article>
+                        <!-- Spero di aver inteso bene la traccia dell'esercizio :-/  -->
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
                     
-                    <p>Il linguaggio HTML (Hypertext Markup Language) è uno dei più conosciuti e diffusi: lo si trova infatti praticamente in tutte le pagine web esistenti. È una scelta popolare tra i principianti Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corporis, aliquid magni consequuntur adipisci ullam nemo, cum rem odit sed ducimus aperiam nisi ut praesentium, nesciunt quaerat. Temporibus, aut nesciunt.</p>
-                    <button>Leggi tutto ></button>
                     
-                </article>
-                <!-- Spero di aver inteso bene la traccia dell'esercizio :-/  -->
-                <aside> 
-                    Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
-                </aside>
-            </span>
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/2.png" alt="Seconda immagine" class="immagine-articolo">
+                            </figure>
+                            <header>
+                                <h3>Corso Javascript online: cosa c’è da sapere</h3>
+                                <time>21 Dicembre 2020</time>
+                            </header>      
+                            <p>
+                                Essere uno sviluppatore web vuol dire imparare più linguaggi di programmazione per poter creare diversi tipi di applicazioni.  Per ogni applicazione, la maggior parte delle volte, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque voluptatum tempore, obcaecati adipisci facere nam dolorem temporibus expedita exercitationem nulla explicabo minus laboriosam eius facilis, cumque quibusdam consequatur ratione.
+                            </p>
+                            <button>Leggi tutto ></button>
+                        </article>
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
+                    
+                    <span class="blog-articles">
+                        <article>
+                            <figure>
+                                <img src="./media/3.png" alt="Terza immagine" class="immagine-articolo">
+                            </figure>
+                            <header>
+                                <h3>Come imparare a programmare con un corso PHP</h3>
+                                <time>1 Dicembre 2020</time>
+                            </header>
+                            <p>Un buon programmatore, si sa, necessita di un ampio bagaglio di conoscenze per potersi districare tra le difficoltà che questo mestiere comporta. Oggi le richieste sul mercato sono Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rerum veniam temporibus repellendus. Adipisci suscipit deserunt praesentium molestias reiciendis magnam tenetur beatae commodi, corporis consequuntur itaque aliquid architecto ex neque!	</p>
+                            <button>Leggi tutto ></button>
+                        </article>  
+                        <aside> 
+                            Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
+                        </aside>
+                    </span>
+                    
+                    
+                </section>
+                
+            </main>
             
-            
-            <span class="blog-articles">
-                <article>
-                    <figure>
-                        <img src="./media/2.png" alt="Seconda immagine" class="immagini">
-                    </figure>
-                    <header>
-                        <h3>Corso Javascript online: cosa c’è da sapere</h3>
-                        <time>21 Dicembre 2020</time>
-                    </header>      
-                    <p>
-                        Essere uno sviluppatore web vuol dire imparare più linguaggi di programmazione per poter creare diversi tipi di applicazioni.  Per ogni applicazione, la maggior parte delle volte, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque voluptatum tempore, obcaecati adipisci facere nam dolorem temporibus expedita exercitationem nulla explicabo minus laboriosam eius facilis, cumque quibusdam consequatur ratione.
-                    </p>
-                    <button>Leggi tutto ></button>
-                </article>
-                <aside> 
-                    Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
-                </aside>
-            </span>
-            
-            <span class="blog-articles">
-                <article>
-                    <figure>
-                        <img src="./media/3.png" alt="Terza immagine" class="immagini">
-                    </figure>
-                    <header>
-                        <h3>Come imparare a programmare con un corso PHP</h3>
-                        <time>1 Dicembre 2020</time>
-                    </header>
-                    <p>Un buon programmatore, si sa, necessita di un ampio bagaglio di conoscenze per potersi districare tra le difficoltà che questo mestiere comporta. Oggi le richieste sul mercato sono Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi rerum veniam temporibus repellendus. Adipisci suscipit deserunt praesentium molestias reiciendis magnam tenetur beatae commodi, corporis consequuntur itaque aliquid architecto ex neque!	</p>
-                    <button>Leggi tutto ></button>
-                </article>  
-                <aside> 
-                    Aside<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis qui commodi asperiores vitae veniam possimus itaque officia tempore deserunt debitis dolorem iusto, eum at illum minus voluptas totam beatae facilis?
-                </aside>
-            </span>
-            
-            
-        </section>
-        
-    </main>
-    
-    <footer>Copyright 2024 Aulab Srl - Tutti i diritti riservati - P.IVA IT07647440721</footer>
-</body>
-</html>
+            <footer>Copyright 2024 Aulab Srl - Tutti i diritti riservati - P.IVA IT07647440721</footer>
+        </body>
+        </html>
